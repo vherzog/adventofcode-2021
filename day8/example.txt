@@ -1,0 +1,50 @@
+ aaaa  
+b    c 
+b    c 
+ dddd  
+e    f 
+e    f 
+ gggg 
+
+    normal_grid = {
+        "a": 0, 
+        "b": 1, 
+        "c": 2, 
+        "d": 3, 
+        "e": 4, 
+        "f": 5, 
+        "g": 6
+    }
+
+    normal_digit_mapping = {
+        0: "abcefg",
+        1: "cf", # unique num
+        2: "acdef",
+        3: "acdfg",
+        4: "bcdf", # unique num
+        5: "abdfg",
+        6: "abdefg", 
+        7: "acf", # unique num
+        8: "abcdefg", # unique num
+        9: "abcfg"
+    }
+
+    normal_digit_len_mapping = {
+        0: 6,
+        1: 2, # unique num
+        2: 5,
+        3: 5,
+        4: 4, # unique num
+        5: 5,
+        6: 6, 
+        7: 3, # unique num
+        8: 7, # unique num
+        9: 6
+    }
+
+    unique_pattern_lens = {
+        2: 1, # unique num
+        4: 4, # unique num
+        3: 7, # unique num
+        7: 8, # unique num
+    }
